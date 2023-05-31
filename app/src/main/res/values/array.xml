@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="discover_slider_rate">
+        <item>0.0</item>
+        <item>10.0</item>
+    </array>
+    <array name="discover_slider_year">
+        <item>1990</item>
+        <item>2022</item>
+    </array>
+</resources>

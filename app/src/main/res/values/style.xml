@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RateSlider" parent="Widget.Material3.Slider">
+        <item name="colorPrimary">@color/sky</item>
+    </style>
+    <style name="DiscoverClear" parent="Widget.Material3.Button">
+        <item name="cornerFamily">cut</item>
+
+        <item name="android:stepSize">1</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+    <style name="DiscoverType" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
+
+    </style>
+</resources>

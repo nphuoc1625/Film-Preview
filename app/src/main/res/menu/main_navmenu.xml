@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/main_bottomnav_home"
+        android:enabled="true"
+        android:icon="@drawable/state_ic_home"
+        android:title="@string/main_nav_home"
+
+        />
+    <item
+        android:id="@+id/main_bottomnav_discover"
+        android:title="Khám phá"
+        android:icon="@drawable/state_ic_discover"/>
+    <item
+        android:id="@+id/main_bottomnav_search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/main_nav_search" />
+    <item
+        android:id="@+id/main_bottomnav_saved"
+        android:icon="@drawable/ic_save"
+        android:title="@string/main_nav_saved" />
+</menu>

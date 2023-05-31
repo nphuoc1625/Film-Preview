@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingEnd="8dp">
+
+    <ImageView
+        android:id="@+id/rvholder_actor_img"
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_tomhardy" />
+
+    <TextView
+        android:id="@+id/rvholder_actor_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Tom Hardy"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/rvholder_actor_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvholder_actor_img" />
+
+    <TextView
+        android:id="@+id/rvholder_actor_as"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Eddie Brock / Vemon"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/rvholder_actor_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvholder_actor_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>

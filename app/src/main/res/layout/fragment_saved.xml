@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.Saved.Savedfrag">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/saved_radiogroup"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@color/lessdark"
+            android:orientation="horizontal"
+            android:paddingStart="1dp"
+            android:paddingEnd="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/saved_moviebtn"
+                android:layout_width="141dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/state_home_typeselect"
+                android:button="@null"
+                android:checked="false"
+                android:fontFamily="@font/rubik_medium"
+
+                android:padding="4dp"
+                android:text="Movie"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/saved_tvseriesbtn"
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/state_home_typeselect"
+                android:button="@null"
+
+                android:fontFamily="@font/rubik_medium"
+                android:padding="6dp"
+                android:text="TV series"
+                android:textAlignment="center"
+
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/saved_peoplebtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@drawable/state_home_typeselect"
+                android:button="@null"
+                android:fontFamily="@font/rubik_medium"
+                android:padding="4dp"
+
+                android:text="People"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/saved_phimrv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/dark"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/saved_radiogroup" />
+
+        <LinearLayout
+            android:id="@+id/saved_people"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:paddingStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/saved_radiogroup">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Diễn viên"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:fontFamily="@font/roboto_medium"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/saved_actorrv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đạo diễn"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:fontFamily="@font/roboto_medium"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/saved_directorrv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

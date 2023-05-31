@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.Home.Homefrag">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/home_radiogroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_wrapBehaviorInParent="horizontal_only">
+
+            <RadioButton
+                android:id="@+id/home_moviebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/state_home_typeselect"
+                android:button="@null"
+                android:checked="false"
+
+                android:fontFamily="@font/rubik_medium"
+                android:text="@string/home_moviebtn"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/home_tvshowbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/state_home_typeselect"
+                android:button="@null"
+
+                android:fontFamily="@font/rubik_medium"
+                android:text="@string/home_tb_tvshow"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_radiogroup">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/home_more_trending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawableEnd="@drawable/ic_leftarrow"
+                    android:gravity="start|center_vertical"
+                    android:paddingStart="8dp"
+                    android:text="Xem nhiều trong tuần"
+                    tools:textAlignment="viewStart" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/home_rv_trending"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="8dp" />
+
+                <Button
+                    android:id="@+id/home_more_popular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawableRight="@drawable/ic_leftarrow"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="start|center_vertical"
+                    android:paddingStart="8dp"
+                    android:text="Đề xuất" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/home_rv_popu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="8dp" />
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

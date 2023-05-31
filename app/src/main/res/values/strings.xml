@@ -1,0 +1,32 @@
+<resources>
+    <string name="solgan">Anytime Anywhere</string>
+    <string name="main_nav_home">Trang chủ</string>
+    <string name="main_nav_search">Tìm kiếm </string>
+    <string name="main_nav_saved">Đã lưu</string>
+    <string name="home_tb_tvshow">Dài tập</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home_moviebtn">Chiếu rạp</string>
+    <string name="search_apdung">Áp dụng</string>
+    <string name="search_dienanh">Điện ảnh</string>
+    <string name="search_aido">Ai đó</string>
+    <string name="search_daitap">Dài tập</string>
+    <string name="search_searchint">Nhập tên phim, đạo diễn hoặc diễn viên</string>
+    <string name="search_tim">Bạn tìm ?</string>
+    <string name="search_namsx">Năm sản xuất</string>
+    <string name="search_danhgia">Đánh giá 1 – 10:</string>
+    <string name="search_theloai">Thể loại</string>
+    <string name="ndvenom">Siêu bom tấn #VENOM: LET THERE BE CARNAGE vừa bất ngờ tung đoạn trailer mãn nhãn, hứa hẹn trận chiến khốc liệt nhất giữa Venom và kẻ thù truyền kiếp, Carnage.
+        Phim sẽ khởi chiếu DUY NHẤT TẠI RẠP vào ngày 24.09.2021 sắp tới. Cùng đón chờ!!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dicover_theloai">Thể Loại</string>
+    <string name="dicover_danhgia">Đánh giá</string>
+    <string name="dicover_namsx">Năm</string>
+    <string name="dicover_aido">Đạo diễn - diễn viên</string>
+    <string name="dicover_daitap">TV</string>
+    <string name="dicover_dienanh">Movie</string>
+    <string name="dicover_tim">Đối tượng</string>
+    <string name="discover_theloai">Thể Loại</string>
+    <string name="discover_danhgia">Đánh giá</string>
+    <string name="discover_namsx">Năm</string>
+</resources>
